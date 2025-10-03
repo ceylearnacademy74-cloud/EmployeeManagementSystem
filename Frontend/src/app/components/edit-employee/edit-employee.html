@@ -1,0 +1,11 @@
+<div class="container mt-4">
+  <h2>Edit Employee</h2>
+  <form (ngSubmit)="updateEmployee()">
+    <input type="text" class="form-control mb-2" [(ngModel)]="employee.name" name="name" required>
+    <input type="email" class="form-control mb-2" [(ngModel)]="employee.email" name="email" required>
+    <input type="text" class="form-control mb-2" [(ngModel)]="employee.department" name="department" required>
+    <input type="number" class="form-control mb-2" [(ngModel)]="employee.salary" name="salary" required>
+    <button class="btn btn-success" type="submit">Update</button>
+  </form>
+</div>
+

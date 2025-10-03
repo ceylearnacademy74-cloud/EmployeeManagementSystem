@@ -1,0 +1,11 @@
+<div class="container mt-4">
+  <h2>Add Employee</h2>
+  <form (ngSubmit)="saveEmployee()">
+    <input type="text" class="form-control mb-2" [(ngModel)]="employee.name" name="name" placeholder="Name" required>
+    <input type="email" class="form-control mb-2" [(ngModel)]="employee.email" name="email" placeholder="Email" required>
+    <input type="text" class="form-control mb-2" [(ngModel)]="employee.department" name="department" placeholder="Department" required>
+    <input type="number" class="form-control mb-2" [(ngModel)]="employee.salary" name="salary" placeholder="Salary" required>
+    <button class="btn btn-success" type="submit">Save</button>
+  </form>
+</div>
+
